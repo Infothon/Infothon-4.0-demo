@@ -287,6 +287,35 @@ body .modal-content {
 }
 
 
+.text-container:hover {
+  border-image-source: linear-gradient(45deg, #ff007c, #00d2ff); /* Glowing gradient border */
+  border-image-slice: 1;
+  animation: text-glow 2s infinite alternate; /* Add glowing animation */
+}
+
+@keyframes text-glow {
+  0% {
+    box-shadow: 0 0 20px #ff007c, 0 0 40px #ff007c, 0 0 60px #00d2ff; /* Glowing effect at 0% */
+  }
+  100% {
+    box-shadow: 0 0 30px #00d2ff, 0 0 50px #ff007c, 0 0 70px #00d2ff; /* Glowing effect at 100% */
+  }
+}
+.cursor-container:hover {
+  border-image-source: linear-gradient(45deg, #ff007c, #00d2ff); /* Glowing gradient border */
+  border-image-slice: 1;
+  animation: text-glow 2s infinite alternate; /* Add glowing animation */
+}
+
+@keyframes cursor-glow {
+  0% {
+    box-shadow: 0 0 20px #ff007c, 0 0 40px #ff007c, 0 0 60px #00d2ff; /* Glowing effect at 0% */
+  }
+  100% {
+    box-shadow: 0 0 30px #00d2ff, 0 0 50px #ff007c, 0 0 70px #00d2ff; /* Glowing effect at 100% */
+  }
+}
+
   </style>
   <body>
 <!-- partial:index.partial.html -->
@@ -318,8 +347,8 @@ body .modal-content {
               Problem Statements
             </a>
             <ul class="dropdown-menu"   style="background-color: (0, 0, 0, 0.5);">
-              <li><a class="dropdown-item" href="problemstatements.html">Theme 1 : Social Innovation</a></li>
-              <li><a class="dropdown-item" href="problemstatements1.html">Theme 2 : Logistics & Management</a></li>
+              <li><a class="dropdown-item" href="problemstatements.html">Domain 1 : AI & ML</a></li>
+              <li><a class="dropdown-item" href="problemstatements1.html">Domain 2 : WEB</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -344,8 +373,10 @@ body .modal-content {
   
 <br><br><br><br>
 <br><br><br>
+
 <div class="cursor-container">
-  <p class="text-line" style="font-size: 30px; font-family: 'Kode Mono', cursive; font-weight: bolder; font-size: 1cm; color: aliceblue;">INFOTHON </p>
+
+ <p class="text-line" style="font-size: 30px; font-family: 'Kode Mono', cursive; font-weight: bolder; font-size: 1cm; color: aliceblue;">INFOTHON </p>
   <img src="img/logo.png" class="cursor-image">
   <div class="text-container">
         <h5 id="cr2" style="font-size: 0.3cm; font-family: 'Saira'; color:rgb(22, 196, 219);">Passion-fueled Creativity, Purpose-driven Innovation</h5>
@@ -353,7 +384,7 @@ body .modal-content {
     <a target="_blank" href="https://unstop.com/o/TRNOYpZ?lb=oDUR4wu8"><button type="button" class="btn btn-outline-info"
                     style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Saira',sans-serif; font-size: larger;">REGISTER NOW</div>
                   </button></a><br>
-        <h5 id="cr2">Date : 12th - 13th February 2024</h5>
+        <h5 id="cr2">Date : 15th - 16th February 2025</h5>
         
 </div>
 </div>
@@ -362,14 +393,15 @@ body .modal-content {
     <button class="close-toast" onclick="closeToast('domains-toast')">&times;</button>
 
     <h5 id="cr2" style="font-size: 0.75cm; margin-bottom: 0.5em;">Important Updates</h5>
-    <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> Date : 12th - 13th February 2024 </h5>
-     <p id="cr2"><strong> Themes :</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
-<h6 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 1. Social Innovation </h6>
-  <h7 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 2. Logistics & Management </h7>
+    <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> Date : 15th - 16th February 2025 </h5>
+    <p id="cr2"><strong>Theme : Based on 17 SDG'S</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
+     <p id="cr2"><strong> Domains :</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
+<h6 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 1.  AI & ML </h6>
+  <h7 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 2. WEB </h7>
     </p>
-    <p style="font-size: 0.4cm;" id="cr2">
+    <!-- <p style="font-size: 0.4cm;" id="cr2">
       Unstop Site : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://unstop.com/o/TRNOYpZ?lb=oDUR4wu8" class="click">Click here to know the shortlisted teams</a>
-    </p>
+    </p> -->
    
     <p style="font-size: 0.4cm;" id="cr2">
       <p id="cr2" style="font-weight: bold;">Event flow : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://drive.google.com/file/d/1kDZ7qwCgwC8AFujZTCCIijxh2ErvN0Qg/view?usp=drive_link" class="click">Click here</a></p>
@@ -401,22 +433,22 @@ body .modal-content {
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
+        <h5 class="modal-title" id="n otificationModalLabel">Notification</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <p id="cr2"><strong> Date of Event : 13th : 14th July 2024 </strong>
+      <p id="cr2"><strong> Date of Event : 15th - 16th February 2025 </strong>
 </p>
     </p>
       <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;">Register Now </h5>
 
-   <p id="cr2"><strong> Themes :</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
-        <h6 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 1. Social Innovation </h6>
-          <h7 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 2. Logistics & Management </h7>
+   <p id="cr2"><strong> Domains :</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
+        <h6 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 1. AI & ML </h6>
+          <h7 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 2. WEB </h7>
             </p>
-    <p style="font-size: 0.4cm;" id="cr2">
+    <!-- <p style="font-size: 0.4cm;" id="cr2">
       Results out : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://drive.google.com/file/d/1q2V6B_T0TUMRPbWspzUa0Kn_tMYnNIlZ/view?usp=drive_link" class="click">Click here to know the shortlisted teams</a>
-    </p>
+    </p> -->
     <p style="font-size: 0.4cm;" id="cr2">
       Event flow : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://drive.google.com/file/d/1kDZ7qwCgwC8AFujZTCCIijxh2ErvN0Qg/view?usp=drive_link" class="click">Click here</a>
     </p>
@@ -430,7 +462,8 @@ body .modal-content {
 <div id="sponsorship-section" ><center>
   <a href="https://unstop.com" target="_blank"><img src="img\sponsors\Unstop-Logo-White-Medium.png" alt=""></a>
    <a href="https://www.ieindia.org/webui/iei-home.aspx" target="_blank"><img src="img\sponsors\IEI.png" alt="" style="border-radius: 100%;"></a>
-  <a href="https://gen.xyz" target="_blank"><img src="img\sponsors\xyz-logo-white.png" alt=""></a>
+   <a href="https://gen.xyz" target="_blank"><img src="img\sponsors\xyz-logo-white.png" alt=""></a>
+  <a href="https://ictacademy.in/" target="_blank"><img src="img/sponsors/ICT.jpg" alt="" style="border-radius: 0.3cm; width: 120px; height: 120px;"> </a>
   </center>
 </div>
 </div>
