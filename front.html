@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infothon 4.0</title>
     <link rel="icon" href="img\logo.png" type="image/icon type">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Add Quicksand and Abril Fatface fonts from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
@@ -17,185 +14,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 <style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
 
-    body {
-        background-color: #376e8ffa;
-        color: white;
-        align-items: center;
-        background-size: 50%;
-        margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
-    }
-.carousel {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80vh;
-            z-index: -1;
-            overflow: hidden;
-        }
-        
-        .carousel-item {
-            position: relative;
-        }
+  .lo{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.25cm;
+    justify-content: center;
+    text-align: center;
+  }
 
-        .carousel img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-
-        .carousel-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .image {
-            margin-right: 3.4cm;
-            margin-bottom: 0;
-            padding-top: 0.5cm;
-            /* Corrected spelling here */
-            align-items: center;
-        }
-
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-            color: #fff;
-        }
-
-        .card {
-            margin-bottom: 10px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .con {
-            display: flex;
-        }
-
-        @media (max-width: 768px) {
-            .navbar-collapse {
-        text-align: center;
-    }
-            .infoton-text{
-  display: none;
-}
-.text-line{
-  font-family: 'Tourney' !important;
-  font-weight: normal !important;
-}
-
-    .navbar-nav {
-        margin: 0;
-        padding: 0;
-        display: block;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        display: block;
-        margin-bottom: 10px; /* Adjust as needed for spacing between items */
-    }
-            .carousel {
-            display: none;
-        }
-
-        .con {
-            text-align: center;
-            background-image: url('img\glimpse\2.JPG'); /* Replace 'your-image-path.jpg' with the path to your background image */
-            background-size: cover;
-            background-position: center;
-            padding: 50px; /* Adjust padding as needed for better visual */
-        }
-
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .image {
-            text-align: center;
-            padding-top: 0.5cm;
-            margin-right: 0;
-        }
-
-        #cr1,
-        #cr2 {
-            text-align: center;
-        }
-            .con {
-                flex-direction: column-reverse;
-            }
-
-            .image {
-                text-align: center;
-                padding-top: 0.5cm;
-                padding-right: 0%;
-            }
-
-            .image img {
-                text-align: center;
-                max-width: 100%;
-                height: auto;
-                max-height: 3cm;
-                max-width: 3cm;
-            }
-
-            .content {
-                width: 100%;
-                text-align: center;
-            }
-
-            .card {
-                margin: 10px auto;
-            }
-
-            #cr1 {
-                color: darkgray !important;
-            }
-
-            #cr2 {
-                color: darkgray !important;
-            }
-            .spo img {
-            margin: 4% !important;
-            height: 20% !important;
-            width: 80% !important;
-        }
-
-        .pre {
-            padding-top: 2cm;
-            font-size: 0.8cm; /* Adjust font size for better mobile display */
-        }
-
-        .sponsors {
-            padding: 5%; /* Adjust padding for better mobile display */
-        }
-
-        .info {
-        padding-left: 0;
-        padding-right: 0;
-    }
-            
-        }
 
         .organizer {
             padding: 20px;
@@ -217,87 +51,53 @@
             /* Adjust this value as needed */
             display: inline-block;
         }
-
         .org {
-          font-family: 'Quicksand', sans-serif;
+          font-family: 'Poiret One', sans-serif;
             text-align: center;
             font-weight: bolder;
             font-size: 1cm;
+            color: white;
+            text-decoration: underline;
         }
-        .pre{
-          font-family: 'Quicksand', sans-serif;
-            text-align: center;
-            font-weight: bolder;
-            font-size: 1cm;
-            color: #fff;
-        }
-        .sponsors {
-            background-color: #376e8ffa; /* Dark background color */
-            text-align: center;
-            padding: 20px;
-        }
-
-        .sponsors img {
-          margin: 0.75cm; /* Spacing between images */
-          height: 3cm; /* Set a fixed height for sponsor images */
-        }
-        .about{
-            font-family: 'Abril Fatface', cursive;
-            color: #1a1a1a;
-            font-size: 1.25cm;
-            justify-content: center;
-            text-align: center;
-        }
-        .info {
-    background-color: rgb(57, 83, 95);
-    padding-left: 1cm; /* Adjust the left padding */
-    padding-right: 1cm; /* Adjust the right padding */
-    padding-top: 3cm;
-    padding-bottom: 3cm;
-}
-
-        #ab{
-            font-family: 'Quicksand', sans-serif;
-            text-align: center;
-            font-size: 0.4cm;
-            font-weight: 500;
-            color: aliceblue;
-        }
-        .stats{
-            background-color: rgb(255, 255, 255);
-            padding-top: 1cm;
-            padding-bottom: 1cm;
-            color: black;
+        .sep{
+            background-color: white;
             
         }
-        .stats .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.stats img {
-    height: 4cm;
-    width: 4cm;
-    margin-left: 0.5cm;
-    margin-right: 0.5cm;
-}
-.container-fluid {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    padding: 0 !important; /* Remove default padding */
-}
-.container {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    padding: 0 !important; /* Remove default padding */
-}
-
-
+        .orga{
+            font-family: 'Poiret One', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1cm;
+            color: black;
+            text-decoration: underline;
+        }
+     @media (max-width: 768px) {
+        .navbar-collapse {
+            text-align: center;
+        }
+    
+        .navbar-nav {
+            margin: 0;
+            padding: 0;
+            display: block;
+            text-align: center;
+        }
+    
+        .navbar-nav .nav-item {
+            display: block;
+            margin-bottom: 10px; /* Adjust as needed for spacing between items */
+        }
+         .infoton-text{
+              display: none;
+        }
+        .text-line{
+              font-family: 'Tourney' !important;
+          font-weight: normal !important;
+    }
+     }
 </style>
-
 <body>
-    <!-- Bootstrap Navbar -->
-    	
-     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="img/eVVCE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
@@ -318,13 +118,13 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
           </li>
-         <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
               Problem Statements
             </a>
             <ul class="dropdown-menu"   style="background-color: (0, 0, 0, 0.5);">
-              <li><a class="dropdown-item" href="problemstatements.html">Theme 1 : Social Innovation</a></li>
-              <li><a class="dropdown-item" href="problemstatements1.html">Theme 2 : Logistics & Management</a></li>
+              <li><a class="dropdown-item" href="problemstatements.html">Domain 1 : AI&ML</a></li>
+              <li><a class="dropdown-item" href="problemstatements1.html">Domain 2 : WEB</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -346,90 +146,9 @@
       </div>
     </div>
   </nav>
-
-    <!-- Content on top of the carousel -->
-    <div class="con">
-        <div class="content">
-            <br><br><br>
-            <div class="row">
-                <div class="card mb-3" style="max-width: 350px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img\card11.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Gain access to new ideas and innovation.</h5>
-                                <p class="card-text">Expand your community and discover career opportunities.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 350px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img\card2.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Learn new technical skills.</h5>
-                                <p class="card-text">Learn interpersonal and teamwork skills.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 350px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img/card3.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Problem Solving</h5>
-                                <p class="card-text">Intellectually stimulating and can lead to the development of creative
-                                    and effective solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 350px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img/card4.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Networking</h5>
-                                <p class="card-text">Chance to network with like-minded people, industry
-                                    professionals, and potential employers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="image">
-            <br><br><br>
-            <center>
-                <img src="img/logo.png" alt="" style="height: 7cm; width: 7cm;">
-                <h5 id="cr1">INFOTHON 4.0</h5>
-                <h5 id="cr2">24 hrs National Level Hackathon</h5>
-                <a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602"><button type="button" class="btn btn-outline-info" style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Quicksand', sans-serif; font-size: larger;">Register Now</button></a>
-
-            </center>
-        </div>
-    </div>
-    <!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
-<!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-    <br><br>
+    <br><br><br><br><br>
     <h5 class="org">Organized by</h5>
-    <!-- Background content -->
     <div class="organizer">
-
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -452,66 +171,128 @@
             </div>
         </div>
     </div>
-    <div class="info">
-        <h5 class="about" style="color: #fff;">INFOTHON 4.0</h5><br>
-        <p id="ab">Welcome to Infothon 2024, the ultimate offline hackathon hosted by the Information Science and Engineering Department of VVCE Mysore! Infothon 2024 is an exhilarating 24-hour coding extravaganza that brings together passionate innovators, programmers, and problem solvers from all walks of life. Held at the prestigious VVCE campus in Mysore, this hackathon is designed to ignite creativity, foster collaboration, and push the boundaries of technological innovation. Join us at Infothon 2024, where creativity, collaboration, and coding excellence come together to shape the future. Get ready to embark on an unforgettable hackathon experience that will challenge, inspire, and empower you to create something extraordinary. Let's code for a brighter tomorrow!</p>
-    </div>
-    <div class="stats">
-        <div class="row">
-            <br>
-            <center>
-            <h1>Previous Year Stats</h1>
-        </center>
-        <br>
-            <div class="col-sm-4">
-                <center>
-                <img src="img/monitoring.png">
-                <h3>220+ Participants</h3>
-                <br>
-            </center>
+<div class="sep">
+    <br>
+    <h5 class="orga">Faculty co-ordinators</h5>
+    <div class="organizer">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">Prof. Prashanth V</h5>
+                        <small class="text-body-secondary">Department of Information Science and Engineering</small><br>
+                        <a>
+                            <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">prashanthmv@vvce.ac.in</small>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <center>
-                <img src="img/team-management.png">
-                <h3>55+ Teams</h3>
-                <br>
-            </center>
-            </div>
-            <div class="col-sm-4">
-                <center>
-                <img src="img/university.png">
-                <h3>15+ Institutions</h3>
-                <br>
-            </center>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">Prof. Prema N S</h5>
+                        <small class="text-body-secondary">Department of Information Science and Engineering</small><br>
+                        <a>
+                            <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">premans@vvce.ac.in</small>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="sponsors" id="sponsors">
-        <h5 class="pre" >-| Previous Sponsors |-</h5>
-        <br>
-        <h5 class="pre">- Gold -</h5>
-        <div class="spo">
-            <a href="https://unstop.com" target="_blank"><img src="img\sponsors\Unstop-Logo-Blue-Medium.png" alt=""></a>
-            <a href="https://gen.xyz" target="_blank"><img src="img\sponsors\xyz-logo-white.png" alt=""></a>
-            <a href="https://digitalspike.co" target="_blank"><img src="img\sponsors\Untitled design.png" alt="" style="border-radius: 0.3cm;"></a>
-            <a href="https://www.learnyst.com/features/sell-online/website-builder" target="_blank"><img src="img\sponsors\Learnst.svg" alt="" style="border-radius: 0.3cm;"></a>
+    <br>
+    <h5 class="orga">Student co-ordinators</h5>
+    <div class="organizer">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">PRANAVA THEJASWI N M</h5>
+                        <small class="text-body-secondary">3rd Year</small><br>
+                        <small class="text-body-secondary">Information Science and Engineering</small>
+                        <br>
+                        <a>
+                            <img src="img\mob.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">  76760 37294</small><br>
+                        </a>
+                        <a>
+                            <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">pranavathejaswi8@gmail.com</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">Prajwal G S</h5>
+                        <small class="text-body-secondary">3rd Year</small><br>
+                        <small class="text-body-secondary">Information Science and Engineering</small>
+                        <br>
+                        <a>
+                            <img src="img\mob.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">  90359 50095</small><br>
+                        </a>
+                        <a>
+                            <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">prajwalgs16@gmail.com</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">S KARTHIK</h5>
+                        <small class="text-body-secondary">3rd Year</small><br>
+                        <small class="text-body-secondary">Information Science and Engineering</small>
+                        <br>
+                        <a>
+                            <img src="img\mob.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary">  99011 53021</small><br>
+                        </a>
+                        <a>
+                            <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                            <small class="text-body-secondary" style="font-size: 0.35cm;">shivakotikarthik9535@gmail.com</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+    <h5 class="org">Convenor</h5>
+    <div class="organizer">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 0.4cm;" >Dr. Ravikumar V</h5>
+                    <small class="text-body-secondary" style="font-weight: bold;">Head of the Department</small><br>
+                    <small class="text-body-secondary">Department of Information Science & Engineering</small><br>
+                     <small class="text-body-secondary">VidyaVardhaka college of Engineering</small><br>
+                </div>
+            </div>
+        </div>
+</div>
+    <h5 class="org">Patron</h5>
+    <div class="organizer">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;" >Dr. B Sadashive Gowda</h5>
+                        <small class="text-body-secondary" style="font-weight: bold;">Principal</small><br>
+                        <small class="text-body-secondary">VidyaVardhaka college of Engineering</small><br>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+     <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color:#000000 !important;">
+              <div class="container">
 
-        </div>
-        <h5 class="pre">- Silver -</h5>
-        <div class="spo">
-          <a href="https://finspike.in" target="_blank"><img src="img\sponsors\Untitled design (2).png" alt="" style="border-radius: 0.3cm;"></a>
-          <a href="https://digitalspike.co" target="_blank"><img src="img\sponsors\Untitled design (1).png" alt="" style="border-radius: 0.3cm;"></a>
-          <a href="https://ezye.in/" target="_blank"><img src="img\sponsors\Untitled design (3).png" alt="" style="border-radius: 0.3cm;"></a>
-        </div>
-        <h5 class="pre">- Associate -</h5>
-        <div class="spo">
-            <a href="https://www.syora.in/" target="_blank"><img src="img\sponsors\chikki.png" alt="" style="border-radius: 0.3cm;"></a>
-            <a href="https://sutra-bistro.business.site/" target="_blank"><img src="img\sponsors\sutra.jpeg" alt="" style="border-radius: 0.3cm;"></a>
-            <a href="https://www.drccinemas.in" target="_blank"><img src="img\sponsors\drc.jpeg" alt="" style="border-radius: 0.3cm;"></a>
-        </div>
-    </div>
-    <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color:#000000 !important;">
-        <div class="container">
             <!-- Logo and Text -->
             <div class="row mb-4">
                 <div class="col-md-12">
@@ -519,8 +300,8 @@
                     <h3 class="navbar-brand mb-0">INFOTHON</h3>
                 </div>
             </div>
-      <!-- Social Media Icons -->
-      <center>
+    <!-- Social Media Icons -->
+    <center>
         <div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
@@ -530,11 +311,11 @@
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
             </div>
-      
+    
             
         </div>
-      </center>
-      
+    </center>
+    
             <!-- Useful Links -->
             <div class="row mt-4">
                 <div class="col">
@@ -555,6 +336,8 @@
                 </div>
             </div>
         </div>
-      </footer>
-</body>
+    </footer>
+        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
