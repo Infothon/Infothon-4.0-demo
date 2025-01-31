@@ -2,6 +2,7 @@
   font-family: 'Tourney', cursive;
   
 }
+@font-face {font-family:"Stopmotion";src:url("StopmotionDecember11.eot?") format("eot"),url("StopmotionDecember11.woff") format("woff"),url("StopmotionDecember11.ttf") format("truetype"),url("StopmotionDecember11.svg#Stopmotion") format("svg");font-weight:normal;font-style:normal;}
  .vl {
     border-left: 1px solid white; /* Vertical line style */
     height: 40px; /* Adjust height as needed */
